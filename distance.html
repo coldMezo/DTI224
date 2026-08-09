@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Distance Calculator</title>
+</head>
+
+<body>
+
+    <h2>How far from University?</h2>
+
+    <label>Enter X:</label>
+    <input type="number" id="xValue">
+    <br><br>
+
+    <label>Enter Y:</label>
+    <input type="number" id="yValue">
+    <br><br>
+
+    <button onclick="calculateDistance()">Calculate</button>
+
+    <h3 id="result"></h3>
+
+    <button onclick="goBack()">Back</button>
+
+
+    <script>
+        function calculateDistance() {
+
+            let x = document.getElementById("xValue").value;
+            let y = document.getElementById("yValue").value;
+
+            // Validation
+            if (x === "" || y === "") {
+                document.getElementById("result").innerHTML =
+                "Please enter both X and Y values";
+                return;
+            }
+
+            x = Number(x);
+            y = Number(y);
+
+            let distance = Math.sqrt(x * x + y * y);
+
+            document.getElementById("result").innerHTML =
+            "Distance = " + distance;
+        }
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
+</body>
+</html>
