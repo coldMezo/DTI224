@@ -1,13 +1,14 @@
+<!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>My Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#000000">
 </head>
+<body>
 
-<link rel="stylesheet" href="style.css">
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#000000">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
 <h1>Mazin Pohloh</h1>
 
 <p><b>Email:</b> sirmf187@gmail.com</p>
@@ -17,7 +18,6 @@
 <hr>
 
 <h2>Profile</h2>
-
 <p>
 I am studying Digital Technology and Innovation at Kasem Bundit University.
 I like learning programming and web development. I am responsible, enjoy
@@ -27,24 +27,25 @@ learning new things, and can work well with others.
 <hr>
 
 <h2>Experience</h2>
-
 <ul>
-    <li> <b> Beirut Restaurant <br> </b>
-    Provided customer service in a fastpaced restaurant environment. </br>
-    Took orders, served food and drinks, and ensured customer satisfaction. </br> 
-    Maintained cleanliness and teamwork during busy shifts. </br>
+    <li>
+        <b>Beirut Restaurant</b><br>
+        Provided customer service in a fast-paced restaurant environment.<br>
+        Took orders, served food and drinks, and ensured customer satisfaction.<br>
+        Maintained cleanliness and teamwork during busy shifts.
     </li>
     <br>
-    <li> <b> Seasonal Worker (Hajj & Umrah Season) Makkah and Medinah, Saudi Arabia <br> </b>  
-    Assisted pilgrims during Hajj/Umrah season in service-related tasks. <br>
-    Helped manage crowd flow and provided basic support to visitors. <br>
-    Worked under high-pressure and high-demand conditions.
+    <li>
+        <b>Seasonal Worker (Hajj & Umrah Season) Makkah and Medinah, Saudi Arabia</b><br>
+        Assisted pilgrims during Hajj/Umrah season in service-related tasks.<br>
+        Helped manage crowd flow and provided basic support to visitors.<br>
+        Worked under high-pressure and high-demand conditions.
     </li>
 </ul>
+
 <hr>
 
 <h2>Education Qualifications</h2>
-
 <ul>
     <li>Ikrimah ibn Abi Jahl Secondary School, Makkah, Saudi Arabia</li>
     <li>Kasem Bundit University - Digital Technology and Innovation</li>
@@ -53,7 +54,6 @@ learning new things, and can work well with others.
 <hr>
 
 <h2>Interests</h2>
-
 <ul>
     <li>Web development</li>
     <li>Programming</li>
@@ -64,18 +64,16 @@ learning new things, and can work well with others.
 <hr>
 
 <h2>My Skills</h2>
-
 <ul>
-    <li>Costumer service</li>
+    <li>Customer service</li>
     <li>Python, Java</li>
     <li>Basic computer skills (Microsoft Office)</li>
-    <li>Adaptabillity in fast-paced environments</li>
+    <li>Adaptability in fast-paced environments</li>
 </ul>
 
 <hr>
 
 <h2>Languages</h2>
-
 <ul>
     <li>Arabic</li>
     <li>Malay</li>
@@ -86,22 +84,26 @@ learning new things, and can work well with others.
 <hr>
 
 <h2>My Projects & Programs</h2>
-<p>
-    <li><a href="hobby.html">My Hobbies </a></li>
+<ul>
     <li><a href="change.html">Calculate Change</a></li>
     <li><a href="grade.html">Calculate Grade</a></li>
     <li><a href="temp.html">Temperature Converter</a></li>
     <li><a href="distance.html">Distance Calculator</a></li>
-</p>
+</ul>
+
+<hr>
+
+<h3><a href="Hobby.html">My Hobbies</a></h3>
 
 <script>
-    if ("serviceWorker" in navigator) {
-        window.addEventListener("load", () => {
-            navigator.serviceWorker.register("./service-worker.js");
-        });
-    }
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+        navigator.serviceWorker.register("./service-worker.js")
+            .then(() => console.log("Service Worker registered"))
+            .catch(error => console.log("Service Worker registration failed:", error));
+    });
+}
 </script>
 
-    
 </body>
 </html>
