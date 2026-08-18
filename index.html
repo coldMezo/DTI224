@@ -90,6 +90,13 @@ learning new things, and can work well with others.
 <h3> <a href="Hobby.html">Hobbies</a> </h3>
 </p>
 
-
+<script>
+    if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+            navigator.serviceWorker.register("./service-worker.js");
+        });
+    }
+</script>
+    
 </body>
 </html>
