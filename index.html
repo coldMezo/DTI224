@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>My Resume</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="manifest" href="./manifest.json">
+    <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#000000">
 </head>
 <body>
@@ -94,12 +94,11 @@ learning new things, and can work well with others.
 
 <hr>
 
-<h3><a href="Hobby.html">My Hobbies</a></h3>
 
 <script>
 if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
-        navigator.serviceWorker.register("./service-worker.js")
+        navigator.serviceWorker.register("/service-worker.js")
             .then(() => console.log("Service Worker registered"))
             .catch(error => console.log("Service Worker registration failed:", error));
     });
